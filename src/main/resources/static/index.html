@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be Mine? ❤️</title>
+
+```
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ffe6ee, #ffc2d1);
+        text-align: center;
+        padding: 70px 15px;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .card {
+        background: white;
+        max-width: 420px;
+        margin: auto;
+        padding: 35px 20px;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px #e9aabb;
+    }
+
+    h1 {
+        color: #e91e63;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    button {
+        border: none;
+        padding: 13px 25px;
+        border-radius: 10px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    #yes {
+        background: #e91e63;
+        color: white;
+    }
+
+    #no {
+        background: #eeeeee;
+        color: #333333;
+    }
+
+    #message {
+        color: #e91e63;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 25px;
+    }
+</style>
+```
+
+</head>
+
+<body>
+    <div class="card">
+        <h1>Will you be mine? ❤️</h1>
+        <p>You make the world a little more beautiful. 🌹</p>
+
+```
+    <div class="buttons">
+        <button id="yes" type="button">Yes 💖</button>
+        <button id="no" type="button">No 🙈</button>
+    </div>
+
+    <p id="message" aria-live="polite"></p>
+</div>
+
+<script>
+    const message = document.getElementById("message");
+
+    document.getElementById("yes").addEventListener("click", () => {
+        message.textContent = "Yay! ❤️ You just made my day! 🥰";
+    });
+
+    document.getElementById("no").addEventListener("click", () => {
+        message.textContent = "That's okay! 😊 Thanks for being honest.";
+    });
+</script>
+```
+
+</body>
+</html>
