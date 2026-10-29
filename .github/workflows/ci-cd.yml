@@ -23,12 +23,12 @@ jobs:
       - name: Build application using Maven
         run: mvn clean package
 
-      - name: Verify generated JAR
+            - name: Verify generated JAR
         run: |
           echo "Generated JAR files:"
           ls -lh target/
 
-                - name: Upload JAR artifact
+      - name: Upload JAR artifact
         uses: actions/upload-artifact@v4
         with:
           name: my-java-app-jar
