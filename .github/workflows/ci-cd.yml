@@ -23,7 +23,7 @@ jobs:
       - name: Build application using Maven
         run: mvn clean package
 
-            - name: Verify generated JAR
+       - name: Verify generated JAR
         run: |
           echo "Generated JAR files:"
           ls -lh target/
