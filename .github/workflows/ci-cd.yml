@@ -27,3 +27,9 @@ jobs:
         run: |
           echo "Generated JAR files:"
           ls -lh target/
+
+                - name: Upload JAR artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-java-app-jar
+          path: target/*.jar
